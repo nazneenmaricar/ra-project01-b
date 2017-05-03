@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="reset.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="flickity.css" type="text/css">
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
+  </script>
+  <script rel="stylesheet" src="flickity.pkgd.js" type="text/javascript">
+  </script>
+  <script src="mainjava.js" type="text/javascript"></script>
+  <title>The Aloha Apparel Co.</title>
+</head>
+
+<body>
+
+  <!-- LOGO, NAV BAR AND SHOPPING CART-->
+  <container class="flex dir-col">
+    <header class="flex dir-col">
+
+      <!--NAV BAR DISPLAYED ON MOBILE-->
+
+      <div class="flex just-cont-between border-bottom-10px padding-10px display-none-tablet display-none-desktop">
+        <img src="images/aloha-logo.svg" alt="Aloha logo" class="logo">
+        <img src="images/cart-icon.svg" alt="Cart icon" class="cart-icons">
+      </div>
+
+      <div class="flex just-cont-cent dir-col padding-30px display-none-tablet display-none-desktop">
+        <ul class="flex just-space-around text-orange padding-10px">
+          <li><a href="#about" class="">ABOUT</a></li>
+          <li><a href="#shop">SHOP</a></li>
+          <li><a href="#featured">FEATURED</a></li>
+          <li><a href="#updates">UPDATES</a></li>
+        </ul>
+      </div>
+
+      <!-- NAV BAR DISPLAYED ON DESKTOP AND TABLET-->
+
+      <div class="flex just-cont-between padding-10px display-none-mobile">
+        <img src="images/aloha-logo.svg" alt="Aloha logo" class="logo">
+
+        <div class="flex">
+          <ul class="flex align-item-cent flex-just-center text-orange nav-desktop">
+            <li class="padding-right-50px-desktop padding-right-50px-tablet"><a href="#about" class="display-block">ABOUT</a></li>
+            <li class="padding-right-50px-desktop padding-right-50px-tablet"><a href="#shop" class="display-block">SHOP</a></li>
+            <li class="padding-right-50px-desktop padding-right-50px-tablet"><a href="#featured" class="display-block">FEATURED</a></li>
+            <li class="padding-right-50px-desktop padding-right-50px-tablet"><a href="#updates" class="display-block">UPDATES</a></li>
+          </ul>
+        </div>
+        <img src="images/cart-icon.svg" alt="Cart icon" class="cart-icon">
+      </div>
+
+    </header>
+
+      <!--BACKGROUND AND FOREGROUND IMAGE AND TEXT-->
+
+    <section class="main">
+      <section class="banner-image flex just-cont-cent dir-col">
+        <div class="text-center text-white ">
+          <p class="bottom-padding-30px rale-medium font-size-1em"> NEW COLLECTION </p>
+          <p class=" playfair-regular font-size-3em"> Spring/Summer 2016 </p>
+        </div>
+      </section>
+
+                    <!--ABOUT THE COMPANY-->
+
+      <section class="text-center padding-30px" id="about">
+        <div class=" flex dir-row just-cont-cent bottom-padding-30px">
+          <p class="playfair-italic padding-right-5px font-size-3em"> Hand-Crafted</p>
+          <p class="playfair-bold font-size-3em"> Styles </p>
+        </div>
+        <p class="rale-light font-size-1emline-height font-size-1em">
+          Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browser our current selection of products or sign-up for updates below.</p>
+        </p>
+      </section>
+
+                        <!--CATEGORY-->
+
+      <section class="text-white font-size-3em rale-medium" id="shop">
+        <div class="flex dir-col dir-row-desktop dir-row-tablet">
+          <div class="mens-cat flex flex-grow-1 margin-bottom-2px just-cont-cent align-item-cent width-50-desktop width-50-tablet margine-right-2px-desktop margine-right-2px-tablet">
+            <p> MEN'S </p>
+          </div>
+
+          <div class="flex margin-bottom-2px flex-grow-1-desktop flex-grow-1-tablet width-50-desktop width-50-tablet">
+            <div class="trends-cat flex-grow-1 margine-right-2px flex just-cont-cent align-item-cent">
+              <p> TRENDS
+                <p>
+            </div>
+
+            <div class="glasses-cat flex  flex-grow-1 just-cont-cent align-item-cent">
+              <p> GLASSES </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex dir-col text-center just-cont-cent dir-row-desktop dir-row-tablet">
+          <div class=" flex margin-bottom-2px flex-grow-1-desktop flex-grow-1-tablet width-50-desktop width-50-tablet">
+            <div class="sales-cat margine-right-2px flex-grow-1 flex just-cont-cent align-item-cent">
+              <p> SALES
+                <p>
+            </div>
+
+            <div class="bags-cat flex flex-grow-1 just-cont-cent align-item-cent margine-right-2px-desktop margine-right-2px-tablet">
+              <p> BAGS </p>
+            </div>
+          </div>
+
+          <div class="womens-cat flex flex-grow-1 margin-bottom-2px just-cont-cent align-item-cent width-50-desktop width-50-tablet">
+            <p> WOMEN'S </p>
+          </div>
+        </div>
+      </section>
+
+                <!--PRODUCTS CAROUSEL-->
+
+      <section class=" flex dir-col padding-30px bottom-padding-50px" id="featured">
+        <div class="flex dir-row just-cont-cent bottom-padding-30px font-size-3em">
+          <p class="playfair-italic padding-right-5px"> Most-Loved </p>
+          <p class="playfair-bold"> Product </p>
+        </div>
+
+        <div class="main-carousel" data-flickity='{ "wrapAround": true }'>
+
+          <div class="carousel-cell carousel-cell-tablet carousel-cell-desktop">
+            <img src="images/stretch-knit-dress.jpg" alt="stretch-knit-dress">
+            <p class="rale-medium bottom-padding-10px text-grey"> DRESSES </p>
+            <p class="text-orange playfair-regular font-size-1embottom-padding-10px"> Stretch Knit Dress </p>
+            <p class="rale-medium text-grey"> $169.00
+              <p>
+          </div>
+
+          <div class="carousel-cell carousel-cell-tablet carousel-cell-desktop">
+            <img src="images/cotton-blue-shirt.jpg" alt="cotton-blue-shirt.jpg">
+            <p class="rale-medium bottom-padding-10px text-grey"> SHIRT </p>
+            <p class="text-orange playfair-regular font-size-1embottom-padding-10px"> Cotton Blue Shirt</p>
+            <p class="rale-medium text-grey"> $89.00
+              <p>
+          </div>
+
+          <div class="carousel-cell carousel-cell-tablet carousel-cell-desktop">
+            <img src="images/checked-stretch-dress.jpg" alt="checked-stretch-shirt">
+            <p class="rale-medium bottom-padding-10px text-grey"> DRESSES </p>
+            <p class="text-orange playfair-regular font-size-1embottom-padding-10px"> Checked Stretch Dress </p>
+            <p class="rale-medium text-grey"> $129.00
+              <p>
+          </div>
+
+
+          <div class="carousel-cell carousel-cell-tablet carousel-cell-desktop">
+            <img src="images/blue-hipster-backpack.jpg" alt="blue-hipster-backpack">
+            <p class="rale-medium bottom-padding-10px text-grey"> BAGS </p>
+            <p class="text-orange playfair-regular font-size-1embottom-padding-10px"> Blue HipsterBag </p>
+            <p class="rale-medium text-grey"> $69.00
+              <p>
+          </div>
+
+          <div class="carousel-cell  carousel-cell-tablet carousel-cell-desktop">
+            <img src="images/blue-silk-dress.jpg" alt="blue silk dress">
+            <p class="rale-medium bottom-padding-10px text-grey"> DRESSES </p>
+            <p class="text-orange playfair-regular font-size-1embottom-padding-10px"> Blue Silk Dress </p>
+            <p class="rale-medium text-grey"> $169.00
+              <p>
+          </div>
+
+          <div class="carousel-cell carousel-cell-tablet carousel-cell-desktop">
+            <img src="images/cotton-yellow-tshirt.jpg" alt="cotton-yellow-tshirt.jpg">
+            <p class="rale-medium bottom-padding-10px text-grey"> T-SHIRT </p>
+            <p class="text-orange playfair-regular font-size-1embottom-padding-10px"> Cotton Yellow T-shirt</p>
+            <p class="rale-medium text-grey"> $89.00
+              <p>
+          </div>
+
+          <div class="carousel-cell carousel-cell-tablet carousel-cell-desktop">
+            <img src="images/demin-overall-shorts.jpg" alt="denim overall shorts">
+            <p class="rale-medium bottom-padding-10px text-grey"> DRESSES </p>
+            <p class="text-orange playfair-regular font-size-1embottom-padding-10px"> Denim Overall Shorts </p>
+            <p class="rale-medium text-grey"> $129.00
+              <p>
+          </div>
+
+          <div class="carousel-cell carousel-cell-tablet carousel-cell-desktop">
+            <img src="images/pink-dotted-dress.jpg" alt="blue-hipster-backpack">
+            <p class="rale-medium bottom-padding-10px text-grey"> DRESSES </p>
+            <p class="text-orange playfair-regular font-size-1embottom-padding-10px"> Pink Dotted Dress </p>
+            <p class="rale-medium text-grey"> $69.00
+              <p>
+          </div>
+        </div>
+      </section>
+
+                  <!--SIGN UP FOR UPDATES SECTION-->
+
+      <section class="signup-img padding-30px text-white" id="updates">
+        <div class="flex dir-row just-cont-cent bottom-padding-30px">
+          <p class="playfair-italic padding-right-5px font-size-3em"> Sign-up for </p>
+          <p class="playfair-bold font-size-3em"> Updates </p>
+        </div>
+        <p class="rale-light font-size-1emline-height text-center bottom-padding-30px font-size-1em">
+          Stay updated on our latest product releases, be first to find ou about upcming sales, and get free style tips from our blog. Unsubscribe at any time.
+        </p>
+
+        <div>
+          <form name="form1" action="#">
+            <input type="text" name="mail" value="Your Email" class="emailfield rale-light text-grey">
+            <input type="submit" value="Subscribe" onclick="ValidateEmail(document.form1.mail)" class="button rale-medium">
+          </form>
+        </div>
+      </section>
+
+            <!-- ADDRESS AND SOCIAL MEDIA-->
+
+      <section class="footer flex dir-col padding-30px text-white dir-row-desktop dir-row-tablet just-cont-between-desktop just-cont-between-tablet">
+        <div class="flex dir-col align-item-cent">
+          <div class="playfair-regular bottom-padding-10px">
+            <p class="line-height"> © 2016 Aloha Apparel Co. </p>
+            <p>Powered by HTML and CSS.</p>
+          </div>
+          <div class="playfair-regular bottom-padding-10px">
+            <p>604-604-6040. info@alohaapprel.com</p>
+          </div>
+          <div class="playfair-regular text-grey">
+            <p class="line-height">1490 W Broadway </p>
+            <p class="bottom-padding-10px">Vancouver, BC, Canada</p>
+          </div>
+        </div>
+
+        <div class=" flex-desktop flex-tablet">
+          <div class="flex just-cont-cent dir-col-desktop dir-col-tablet">
+            <p class="padding-10px padding-5px-desktop padding-5px-tablet">
+              <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+            </p>
+
+            <p class="padding-10px padding-5px-desktop padding-5px-tablet">
+              <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a>
+            </p>
+
+            <p class="padding-10px padding-5px-desktop padding-5px-tablet">
+              <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+            </p>
+
+            <p class="padding-10px padding-5px-desktop padding-5px-tablet">
+              <a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a>
+            </p>
+
+            <p class="padding-10px padding-5px-desktop padding-5px-tablet">
+              <a href="https://plus.google.com/explore"><i class="fa fa-google-plus"></i></a>
+            </p>
+          </div>
+
+            <!-- DISPLAYED ON DESKTOP AND TABLET-->
+
+          <div class="display-none-mobile playfair-regular ">
+            <p class="padding-5px-desktop padding-5px-tablet">Facebook</p>
+            <p class="padding-5px-desktop padding-5px-tablet">Twitter</p>
+            <p class="padding-5px-desktop padding-5px-tablet">Instagram</p>
+            <p class="padding-5px-desktop padding-5px-tablet">Pinterest</p>
+            <p class="padding-5px-desktop padding-5px-tablet">Google+</p>
+          </div>
+        </div>
+
+      </section>
+    </section>
+  </container>
+</body>
+
+</html>
