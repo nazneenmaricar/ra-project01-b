@@ -10,7 +10,7 @@
 .just-cont-between {justify-content: space-between;}
 .just-space-around {justify-content: space-around;}
 .align-item-cent {align-items: center;}
-.flex-end {align-content: : flex-end;}
+.flex-end {align-content: flex-end;}
 .dir-col {flex-direction: column;}
 .dir-row {flex-direction: row;}
 .align-cont-cent {align-content: center;}
